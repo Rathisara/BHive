@@ -1,0 +1,230 @@
+/* ==================== SETTINGS PAGE ==================== */
+
+.settings-page {
+  display: flex;
+  justify-content: center;
+  padding: 30px 20px;
+  background: #f9f9f9;
+  min-height: 100vh;
+}
+
+.settings-container {
+  background: white;
+  border-radius: 20px;
+  padding: 40px;
+  max-width: 700px;
+  width: 100%;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.08);
+}
+
+.settings-container h1 {
+  color: #8B5A3C;
+  font-size: 32px;
+  margin-bottom: 30px;
+  font-family: "Fredoka One", cursive;
+  text-align: center;
+}
+
+.settings-section {
+  margin-bottom: 35px;
+  padding-bottom: 25px;
+  border-bottom: 2px solid #f0f0f0;
+}
+
+.settings-section:last-of-type {
+  border-bottom: none;
+}
+
+.settings-section h2 {
+  color: #8B5A3C;
+  font-size: 20px;
+  margin-bottom: 20px;
+  font-family: "Fredoka One", cursive;
+}
+
+.settings-item {
+  margin-bottom: 25px;
+}
+
+.settings-item label {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.settings-label {
+  color: #4a2300;
+  font-weight: 600;
+  font-size: 15px;
+  font-family: "Comic Sans MS", cursive;
+}
+
+.settings-select {
+  padding: 12px 15px;
+  border: 2px solid #8B5A3C;
+  border-radius: 10px;
+  font-size: 14px;
+  font-family: "Comic Sans MS", cursive;
+  cursor: pointer;
+  background: white;
+  color: #4a2300;
+  transition: all 0.3s ease;
+}
+
+.settings-select:hover,
+.settings-select:focus {
+  border-color: #6b4423;
+  box-shadow: 0 0 8px rgba(139, 90, 60, 0.2);
+  outline: none;
+}
+
+.settings-hint {
+  font-size: 12px;
+  color: #999;
+  margin: 0;
+  font-style: italic;
+}
+
+.checkbox-item label {
+  flex-direction: row;
+  align-items: center;
+  gap: 12px;
+}
+
+.settings-checkbox {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  accent-color: #8B5A3C;
+}
+
+.color-picker-container {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.settings-color-picker {
+  width: 60px;
+  height: 50px;
+  border: 2px solid #8B5A3C;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.settings-color-picker:hover {
+  transform: scale(1.05);
+}
+
+.color-text {
+  color: #4a2300;
+  font-weight: 600;
+  font-family: "Comic Sans MS", cursive;
+}
+
+.info-section {
+  background: linear-gradient(135deg, #f6cd51 0%, #ffe680 100%);
+  padding: 20px;
+  border-radius: 15px;
+  text-align: center;
+  border-bottom: none;
+}
+
+.info-section p {
+  color: #4a2300;
+  font-weight: 600;
+  margin: 8px 0;
+  font-family: "Comic Sans MS", cursive;
+}
+
+.settings-actions {
+  display: flex;
+  gap: 15px;
+  margin-top: 30px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.settings-btn {
+  padding: 14px 30px;
+  border: none;
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: "Comic Sans MS", cursive;
+}
+
+.save-btn {
+  background: linear-gradient(135deg, #8B5A3C 0%, #6b4423 100%);
+  color: white;
+}
+
+.save-btn:hover {
+  background: linear-gradient(135deg, #6b4423 0%, #4a2f17 100%);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(139, 90, 60, 0.3);
+}
+
+.reset-btn {
+  background: white;
+  color: #8B5A3C;
+  border: 2px solid #8B5A3C;
+}
+
+.reset-btn:hover {
+  background: #f9f9f9;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(139, 90, 60, 0.15);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .settings-container {
+    padding: 25px;
+  }
+
+  .settings-container h1 {
+    font-size: 24px;
+  }
+
+  .settings-section h2 {
+    font-size: 18px;
+  }
+
+  .settings-actions {
+    flex-direction: column;
+  }
+
+  .settings-btn {
+    width: 100%;
+  }
+}
+
+/* Dark Theme Support */
+@media (prefers-color-scheme: dark) {
+  .settings-page {
+    background: #1a1a1a;
+  }
+
+  .settings-container {
+    background: #2d2d2d;
+    color: #e0e0e0;
+  }
+
+  .settings-section {
+    border-bottom-color: #404040;
+  }
+
+  .settings-select {
+    background: #3a3a3a;
+    color: #e0e0e0;
+    border-color: #8B5A3C;
+  }
+
+  .settings-hint {
+    color: #aaa;
+  }
+}
